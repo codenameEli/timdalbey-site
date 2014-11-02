@@ -1,0 +1,179 @@
+// Nav
+.nav-primary {
+  @extend .clearfix;
+
+  // Ubermenu
+  #megaMenu {
+    background: #0875bc;
+    border: 0;
+    @include border-radius(0);
+    @include box-shadow(0);
+    @extend .clearfix;
+
+    #megaMenuToggle {
+      font-size: 18px;
+      color: #fff;
+      font-weight: bold;
+      padding: 20px 15px;
+
+      .megaMenuToggle-icon {
+        background: #fff;
+        &:before, &:after {
+          background: #fff;
+        }
+      }
+    }
+
+    ul.megaMenu {
+      margin: 0 auto;
+      float: none;
+      width: 900px;
+      @media ( min-width:1200px ) {
+        width: 1160px;
+      }
+      @media ( max-width:979px ) {
+        width: 700px;
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+
+      li.menu-item {
+        @media ( max-width:767px ) {
+          width: 100%!important;
+          position: relative;
+          text-align: center;
+        }
+        &:before {
+          content: "";
+          color: #FFF;
+          float: left;
+          top: 14px;
+          position: relative;
+          font-size: 14px;
+          left: -1px;
+          width: 2px;
+          height: 20px;
+          display: block;
+          background: #FFF;
+          @media (min-width: 1200px) {
+            top: 15px;
+          }
+          @media (min-width: 768px) and (max-width: 979px) {
+            top: 12px;
+          }
+          @media (max-width: 979px) {
+            display: none;
+          }
+        }
+        &:first-child {
+          margin-left: 5px;
+          @media (max-width: 767px) {
+            margin-left: 0;
+          }
+          &:before{
+            display: none;
+          }
+        }
+
+        &:hover {
+          a {
+            background: #1E253A;
+          }
+        }
+
+        a {
+          padding: 13px 20px 9px;
+          @media (min-width: 1200px) {
+            padding: 12px 36px 11px;
+          }
+          @media (min-width: 768px) and (max-width: 979px) {
+            padding: 13px 16px 13px;
+          }
+          &:after {
+            display: none;
+          }
+        }
+
+        span {
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 18px;
+          font-weight: bold;
+          @media (min-width: 1200px) {
+            font-size: 20px;
+          }
+          @media (min-width: 768px) and (max-width: 979px) {
+            font-size: 14px;
+          }
+          &:after {
+            display: none;
+          }
+        }
+      }
+      // Ubermenu submenu
+      ul.sub-menu {
+        @include border-radius(0!important);
+        @include box-shadow(none!important);
+        border: 0!important;
+        margin: 0!important;
+        padding: 0!important;
+        left: auto!important;
+        background-color: #1E253A;
+        min-width: 250px!important;
+        @media( max-width:767px ) {
+            position: relative!important;
+            width: 100%;
+        }
+
+        li.menu-item {
+          margin: 0!important;
+          padding: 0!important;
+          width: 100%!important;
+          clear: both;
+          background-color: #1E253A;
+          &:before {
+            content: "";
+            width: 0;
+            display: none;
+          }
+          &:last-child {
+            @media ( max-width:979px ) {
+                margin-bottom: 0;
+            }
+          }
+          &:hover {
+
+            a {
+              background-color: #0875BC!important;
+            }
+          }
+
+          a {
+            padding: 12px 20px 11px!important;
+            margin-top: 0 !important;
+            margin-bottom: 0!important;
+            @media ( min-width:1200px ) {
+              padding: 12px 31px 11px!important;
+            }
+            @media (min-width: 768px) and (max-width: 979px) {
+              padding: 12px 18px 11px!important;
+            }
+
+            .wpmega-link-title {
+              font-weight: 400;
+              font-size: 18px;
+              text-transform: none;
+              @media ( min-width:1200px ) {
+                font-size: 20px;
+              }
+              @media (min-width: 768px) and (max-width: 979px) {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
