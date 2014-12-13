@@ -58,6 +58,7 @@ var build_state = 'prod',
     ];
 
 module.exports = function(grunt) {
+
     "use strict";
 
     grunt.initConfig({
@@ -85,23 +86,28 @@ module.exports = function(grunt) {
                 files: uglify_files,
                 options: {
                     beautify: true,
-                    mangle: false
+                    mangle: false,
                 },
             },
             // `grunt uglify:prod`
             prod: {
-                files: uglify_files
+                files: uglify_files,
+                options: {
+                    compress: {
+                        drop_console: true
+                    }
+                }
             }
         }, // uglify
         sass: {
             // `grunt sass:dev`
             dev: {
-                options: { style: "normal" },
+                options: { style: "normal", sourceMap: true },
                 files: sass_files,
             },
             // `grunt sass:prod`
             prod: {
-                options: { style: "compressed" },
+                options: { style: "compressed", sourceMap: true },
                 files: sass_files,
             }
 
@@ -121,7 +127,7 @@ module.exports = function(grunt) {
     grunt.registerTask('dev', ['sass:dev', 'uglify:dev']);
 
     // load these tasks (necessary to allow use of sass, watch, and uglify
-    grunt.loadNpmTasks("grunt-contrib-sass");
+    grunt.loadNpmTasks("grunt-sass");
     grunt.loadNpmTasks("grunt-contrib-watch");
     grunt.loadNpmTasks("grunt-contrib-uglify");
 };
