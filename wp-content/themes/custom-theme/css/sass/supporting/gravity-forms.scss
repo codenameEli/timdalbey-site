@@ -1,0 +1,80 @@
+// Hide form title
+.gform_wrapper h3.gform_title {
+    display: none;
+}
+
+body .site-container {
+
+    .gform_wrapper {
+        margin: 0 auto;
+        width: 746px;
+
+        .ginput_container {
+            float: right;
+            @media ( max-width: $screen-sm-max ) {
+                float: none;
+            }
+        }
+
+        .gfield {
+            float: left;
+            width: 100%;
+            margin: 25px 0 0;
+            &:first-child {
+                margin: 0;
+            }
+        }
+
+        input[type=text], input[type=url], input[type=email], input[type=tel], input[type=number], input[type=password], textarea.textarea {
+            @extend .ldm-input-style;
+            width: 553px;
+            @media ( max-width: $screen-sm-max ) {
+                width: 100%;
+            }
+        }
+
+        // Style for errors
+        li.gfield.gfield_error {
+            padding: 0!important;
+            background-color: transparent!important;
+            border: 0!important;
+
+            input[type=text], input[type=url], input[type=email], input[type=tel], input[type=number], input[type=password], textarea.textarea {
+                @extend .ldm-input-style;
+                border: 1px solid #790000;
+                width: 553px;
+            }
+        }
+
+        textarea.textarea {
+            padding: 5px 10px;
+            height: 150px;
+        }
+
+        .gfield_label {
+            color: $h1Color;
+            font-family: $fontFamily;
+            text-transform: uppercase;
+            font-size: 24px;
+            line-height: 30px;
+            font-weight: 100;
+            letter-spacing: 2px;
+            float: left;
+            margin: 0;
+        }
+
+        .gform_footer input.button, .gform_footer input[type=submit] {
+            @extend .ldm-button;
+            width: 358px;
+            margin-left: 173px;
+            @media ( min-width: $screen-lg-min ) {
+                margin-left: 193px;
+            }
+            @media ( max-width: $screen-sm-max ) {
+                margin: 0 auto;
+                display: block;
+                width: 80%;
+            }
+        }
+    }
+}

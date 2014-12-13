@@ -1,0 +1,86 @@
+/* Widget Styles
+------------------------------------------------------------ */
+
+.widget {
+    text-align: center;
+    @media ( max-width: $screen-sm-max ) {
+        margin-left: 20px;
+    }
+    @media ( max-width: $screen-xs-max ) {
+        height: auto!important; // To override the JS equal heights property
+        max-width: 358px;
+        margin: 0 auto;
+    }
+
+    .widget-wrap {
+        position: relative;
+        height: 100%;
+        padding: 30px 25px 100px;
+        background-color: #1e5352;
+        @include box-shadow( inset 0px 0px 65px -5px rgba(0, 0, 0, 0.75) );
+    }
+
+    .widget-title {
+        font-family: $fontFamily;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 42px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: $h4Color;
+        a {
+            color: $h4Color;
+            &:hover {
+                color: $linkColor;
+            }
+        }
+    }
+
+    a:hover {
+        color: $linkColorHover;
+    }
+
+    .ldm-button {
+        // Button is absolute to be the same position as other buttons regardless of amount of text
+        position: absolute;
+        left: 50%;
+        width: 70%;
+        margin-left: -35%;
+        bottom: 30px;
+        background-color: $buttonColorHover;
+        &:hover {
+            background-color: $buttonColor;
+        }
+    }
+
+    // Default Styles
+    // https://github.com/salcode/bootstrap-genesis/blob/develop/css/sass/supporting/widget.scss
+    input,
+    textarea,
+    select {
+        max-width: 100%;
+    }
+    ul {
+        margin: 0;
+    }
+    li {
+        list-style-type: none;
+        word-wrap: break-word;
+        margin-bottom:10px;
+
+    }
+    table {
+        @extend .table;
+        @extend .table-condensed;
+        @media (min-width: 768px) and (max-width: 979px) {
+            th,td { padding: 3px 2px; }
+        }
+    }
+
+    .widget_rss {
+        li { margin-bottom:20px; }
+    }
+    .widget_search {
+        .search-query { max-width: 90%; }
+    }
+}

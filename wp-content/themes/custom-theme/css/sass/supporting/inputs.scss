@@ -1,0 +1,10 @@
+// Input field box and text
+.ldm-input-style {
+    @include box-shadow(none);
+    border: 1px solid #cbcccc;
+    font-size: 16px;
+    padding: 0 10px;
+    font-family: $fontFamily;
+    height: 35px;
+    background-color: #f1f2f2;
+}

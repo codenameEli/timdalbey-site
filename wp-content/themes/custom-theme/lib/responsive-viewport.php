@@ -14,7 +14,8 @@ function bsg_responsive_viewport_setup() {
 // add viewport for responsive
 // http://stackoverflow.com/questions/9386429/simple-bootstrap-page-is-not-responsive-on-the-iphone#answer-10120831
 function bsg_responsive_viewport() {
+    
     ?>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<?php
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<?php
 }

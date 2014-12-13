@@ -1,0 +1,33 @@
+// font family
+$fontFamily: 'Playfair Display', serif;
+
+// colors
+$bodyBgColor: #062928;
+$contentBgColor: #f1f2f2;
+
+$defaultTextColor: #6d6e71;
+
+$linkColor: #916d00;
+$linkColorHover: #1e5352;
+
+$h1Color: $linkColor;
+$h1ColorHover: $bodyBgColor;
+
+$h2Color: $defaultTextColor;
+$h2ColorHover: $h1ColorHover;
+
+$h3Color: $linkColorHover;
+$h3ColorHover: $linkColor;
+
+$h4Color: #d8ca95;
+$h4ColorHover: $linkColor;
+
+// Custom LDM Button
+$buttonColor: $linkColorHover;
+$buttonColorHover: $h1ColorHover;
+$buttonTextColor: $h4Color;
+
+// Font Awesome Social Icon Colors
+// social-menu.scss
+$socialIconBgColor: $defaultTextColor;
+$socialIconHoverBgColor: $bodyBgColor;

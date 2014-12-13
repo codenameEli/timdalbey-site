@@ -1,0 +1,38 @@
+// Box Shadows
+.ldm-home-banners-wrapper, .single-featured-image {
+    overflow: hidden;
+    &:after {
+        @include siteInnerShadow();
+        bottom: 0;
+    }
+    &:before {
+        @include siteInnerShadow();
+        top: 0;
+    }
+}
+
+.entry-title {
+    &:after {
+        content: "";
+        width: 88%;
+        height: 1px;
+        background-color: #cbcccc;
+        display: block;
+        margin: 25px auto 15px;
+    }
+}
+
+.single-featured-image {
+    padding: 0;
+}
+
+.content-sidebar-wrap {
+    &:after {
+        content: "";
+        width: 88%;
+        height: 1px;
+        background-color: #cbcccc;
+        display: block;
+        margin: 30px auto;
+    }
+}

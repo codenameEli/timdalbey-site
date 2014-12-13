@@ -1,0 +1,57 @@
+.ldm-home-banners-wrapper {
+
+    /* No JS fix for images */
+    .ldm-home-banner img {
+        display: none;
+    }
+
+    .ldm-home-banner:first-child img {
+        display: block;
+    }
+
+    .ldm-home-banner.slick-slide img {
+        display: block;
+    }
+
+    &.slick-slider {
+        margin-bottom: 0;
+        padding: 0;
+        background-color: #FFF;
+    }
+
+    .slick-dots {
+        margin-left: 0;
+        bottom: -37px;
+    }
+
+    .slick-prev, .slick-next {
+        margin-top: 0;
+        top: auto;
+        bottom: 0;
+        background-color: rgba(169, 131, 83, 0.7);
+        width: 67px;
+        height: 40px;
+        &:before {
+            font-size: 36px;
+            font-family: $fontFamily;
+        }
+        &:hover {
+            @include hoverTransition;
+            background-color: rgb(169, 131, 83);
+        }
+    }
+
+    .slick-next {
+        right: 19px;
+        &:before {
+            content: ">";
+        }
+    }
+
+    .slick-prev {
+        left: 19px;
+        &:before {
+            content: "<";
+        }
+    }
+}

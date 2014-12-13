@@ -24,9 +24,9 @@ function bsg_add_markup_class( $attr, $context ) {
             'site-header'       => 'container',
             'site-inner'        => 'container',
             'site-footer'       => 'container',
-            'content-sidebar-wrap'      => 'row',
-            'content'           => 'span8',
-            'sidebar-primary'   => 'span4',
+            'content-sidebar-wrap' => 'row',
+            'content'           => 'col-sm-8',
+            'sidebar-primary'   => 'col-sm-4',
             'archive-pagination'=> 'clearfix',
         ),
         $context,
@@ -47,7 +47,7 @@ function bsg_add_markup_class( $attr, $context ) {
 
     $classes_array = array_map( 'sanitize_html_class', $classes_array );
 
-    // append the class(es) string (e.g. 'span9 custom-class1 custom-class2')
+    // append the class(es) string (e.g. 'col-sm-9 custom-class1 custom-class2')
     $attr['class'] .= ' ' . implode( ' ', $classes_array );
 
     return $attr;

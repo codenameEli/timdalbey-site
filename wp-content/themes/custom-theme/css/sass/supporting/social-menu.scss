@@ -1,0 +1,58 @@
+// Icons are set through UberMenu
+.ubermenu-loc-social_menu .ubermenu-nav {
+
+    .ubermenu-target-with-icon {
+        padding: 0;
+    }
+
+    // General
+    .ubermenu-item {
+        margin-left: 15px;
+        &:first-child {
+            margin-left: 0;
+        }
+
+        .ubermenu-target {
+            color: $socialIconBgColor;
+            &:hover {
+                color: $socialIconHoverBgColor;
+            }
+        }
+    }
+
+    // Text
+    .ubermenu-item-type-post_type {
+
+        .ubermenu-target {
+            padding: 8px 5px;
+            font-size: 16px;
+        }
+    }
+
+}
+
+// Font Awesome Icons
+div .ubermenu-nav .ubermenu-icon {
+    background-color: $socialIconBgColor;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    font-size: 26px;
+    display: table;
+    line-height: 0!important;
+    &:before {
+        display: table-cell;
+        vertical-align: middle;
+    }
+    &:hover {
+        background-color: $socialIconHoverBgColor;
+        @include hoverTransition;
+    }
+    &.fa-search {
+        background-color: $contentBgColor;
+        color: #6D6E71;
+        &:hover {
+            color: $socialIconHoverBgColor;
+        }
+    }
+}
