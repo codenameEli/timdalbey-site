@@ -1,39 +1,41 @@
-# ignore all files starting with .
-\.*
-# include .gitignore (i.e. do NOT ignore)
-!.gitignore
-# ignore all files that start with ~
-~*
-# ignore theme.css (we use sass and do not check in theme.css since it is minified)
-style.min.css
-# compressed version of javascript (created with grunt)
-javascript.min.js
-
-# ignore node/grunt dependencies
-node_modules/
-
-#ignore sublime project files
-*.sublime-project
-*.sublime-workspace
-
+# -----------------------------------------------------------------
+# .gitignore for Launchpad root
 #
-wp-config.php
-wp-content/uploads/
-wp-content/blogs.dir/
-wp-content/upgrade/
-wp-content/backup-db/
-wp-content/advanced-cache.php
-wp-content/wp-cache-config.php
-sitemap.xml
-*.log
-wp-content/cache/
-wp-content/backups/
-wp-content/themes/twentyfourteen/
+# This file is tailored for a WordPress project
+# using the default directory structure
+#
+# This file specifies intentionally untracked files to ignore
+# http://git-scm.com/docs/gitignore
+#
+# NOTES:
+# The purpose of gitignore files is to ensure that certain files not
+# tracked by Git remain untracked.
+#
+# To ignore uncommitted changes in a file that is already tracked,
+# use `git update-index --assume-unchanged`.
+#
+# To stop tracking a file that is currently tracked,
+# use `git rm --cached`
+#
+# Change Log:
+# 20140606 Add .editorconfig as a tracked file
+# 20140404 Ignore database, compiled, and packaged files
+# 20140404 Header Information Updated
+# 20140402 Initially Published
+#
+# -----------------------------------------------------------------
 
-# twentythirteen left in place for testing functionality
-# in a base theme
-#wp-content/themes/twentythirteen/
 
-wp-content/themes/twentyfourteen/
-sitemap.xml
-sitemap.xml.gz
+# ignore everything in the root except the "wp-content" directory.
+/*
+!wp-content/
+
+# ignore everything in the "wp-content" directory, except:
+# mu-plugins, plugins, and themes directories
+wp-content/*
+!wp-content/mu-plugins/
+!wp-content/plugins/
+!wp-content/themes/
+
+# Sublime Text files
+*.sublime-*
