@@ -22,9 +22,3 @@ Do the below actions before starting work on the project
 2. `npm install`
 3. Change **themeName** in `package.json` to what you want the theme name to be.
 4. Run `grunt build`
-
-Working on the project
-----------------------------------
-
-1. Run grunt sync while working on the project
-2. Always be working in the src folder, never the htdocs folder

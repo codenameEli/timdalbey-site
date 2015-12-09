@@ -34,7 +34,6 @@ vendor
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories
 htdocs/wp-content/*
-!htdocs/wp-content/mu-plugins/
 !htdocs/wp-content/plugins/
 !htdocs/wp-content/themes/
 
