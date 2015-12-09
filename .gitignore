@@ -28,14 +28,14 @@
 
 # ignore everything in the root except the "wp-content" directory.
 /*
-!wp-content/
+!htdocs/wp-content/
 
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories
-wp-content/*
-!wp-content/mu-plugins/
-!wp-content/plugins/
-!wp-content/themes/
+htdocs/wp-content/*
+!htdocs/wp-content/mu-plugins/
+!htdocs/wp-content/plugins/
+!htdocs/wp-content/themes/
 
 # Sublime Text files
 *.sublime-*
