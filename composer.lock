@@ -1,0 +1,323 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "913aa72488302fc5661a66210e9d72c2",
+    "content-hash": "7cc5ecd544ab6035ea1449a059718f5c",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v1.0.22",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "1.0.0"
+            },
+            "replace": {
+                "roundcube/plugin-installer": "*",
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "4.1.*"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "Composer\\Installers\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "https://github.com/shama"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "Craft",
+                "Dolibarr",
+                "Hurad",
+                "MODX Evo",
+                "OXID",
+                "SMF",
+                "Thelia",
+                "WolfCMS",
+                "agl",
+                "aimeos",
+                "annotatecms",
+                "bitrix",
+                "cakephp",
+                "chef",
+                "codeigniter",
+                "concrete5",
+                "croogo",
+                "dokuwiki",
+                "drupal",
+                "elgg",
+                "fuelphp",
+                "grav",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "lithium",
+                "magento",
+                "mako",
+                "mediawiki",
+                "modulework",
+                "moodle",
+                "phpbb",
+                "piwik",
+                "ppi",
+                "puppet",
+                "roundcube",
+                "shopware",
+                "silverstripe",
+                "symfony",
+                "typo3",
+                "wordpress",
+                "zend",
+                "zikula"
+            ],
+            "time": "2015-10-29 23:28:48"
+        },
+        {
+            "name": "johnpbloch/wordpress",
+            "version": "4.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress.git",
+                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress/zipball/cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
+                "reference": "cfcf25eb42baeb7316a61c7a64e9a1ab3e291f2f",
+                "shasum": ""
+            },
+            "require": {
+                "johnpbloch/wordpress-core-installer": "~0.2",
+                "php": ">=5.3.2"
+            },
+            "type": "wordpress-core",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "WordPress Community",
+                    "homepage": "http://wordpress.org/about/"
+                }
+            ],
+            "description": "WordPress is web software you can use to create a beautiful website or blog.",
+            "homepage": "http://wordpress.org/",
+            "keywords": [
+                "blog",
+                "cms"
+            ],
+            "time": "2015-09-15 15:01:23"
+        },
+        {
+            "name": "johnpbloch/wordpress-core-installer",
+            "version": "0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
+                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a04c2c383ef13aae077f36799ed2eafdebd618d2",
+                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0"
+            },
+            "conflict": {
+                "composer/installers": "<1.0.6"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "johnpbloch\\Composer\\WordPressCorePlugin"
+            },
+            "autoload": {
+                "psr-0": {
+                    "johnpbloch\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "John P. Bloch",
+                    "email": "me@johnpbloch.com"
+                }
+            ],
+            "description": "A custom installer to handle deploying WordPress with composer",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-06-11 15:15:30"
+        },
+        {
+            "name": "launchdm/advanced-custom-fields",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/launchdm/advanced-custom-fields.git",
+                "reference": "8804e9d13b6c41d34bed5145ddb6fe165af7b826"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/launchdm/advanced-custom-fields/get/8804e9d13b6c41d34bed5145ddb6fe165af7b826.zip",
+                "reference": "8804e9d13b6c41d34bed5145ddb6fe165af7b826",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "launchdm",
+                    "email": "web@launchdm.com"
+                }
+            ],
+            "description": "Advanced Custom Fields Pro",
+            "time": "2015-09-03 20:05:38"
+        },
+        {
+            "name": "launchdm/genesis",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/launchdm/genesis.git",
+                "reference": "4fdc336f13ef5dcbce2674a118bcbd5eb277dfaf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/launchdm/genesis/get/4fdc336f13ef5dcbce2674a118bcbd5eb277dfaf.zip",
+                "reference": "4fdc336f13ef5dcbce2674a118bcbd5eb277dfaf",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "launchdm",
+                    "email": "web@launchdm.com"
+                }
+            ],
+            "description": "Genesis Framework.",
+            "time": "2015-05-27 19:00:04"
+        },
+        {
+            "name": "launchdm/gravity-forms",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/launchdm/gravity-forms.git",
+                "reference": "cad2467ae14b3946c994a47e52713832cf170601"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/launchdm/gravity-forms/get/cad2467ae14b3946c994a47e52713832cf170601.zip",
+                "reference": "cad2467ae14b3946c994a47e52713832cf170601",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "launchdm",
+                    "email": "web@launchdm.com"
+                }
+            ],
+            "description": "Gravity Forms WordPress Plugin",
+            "time": "2015-09-04 23:57:58"
+        },
+        {
+            "name": "launchdm/launchpad-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/launchdm/launchpad-theme.git",
+                "reference": "c52051be02e4c2261b994635ab078df1510211f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/launchdm/launchpad-theme/get/c52051be02e4c2261b994635ab078df1510211f1.zip",
+                "reference": "c52051be02e4c2261b994635ab078df1510211f1",
+                "shasum": ""
+            },
+            "type": "wordpress-theme",
+            "authors": [
+                {
+                    "name": "Eli Dalbey",
+                    "email": "eli@launchdm.com"
+                }
+            ],
+            "description": "Custom built WordPress theme",
+            "time": "2015-09-17 23:13:57"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "launchdm/genesis": 20,
+        "launchdm/launchpad-theme": 20,
+        "launchdm/advanced-custom-fields": 20,
+        "launchdm/gravity-forms": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.5"
+    },
+    "platform-dev": []
+}

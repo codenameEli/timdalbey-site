@@ -25,9 +25,10 @@
 #
 # -----------------------------------------------------------------
 
-
+node_modules
+vendor
 # ignore everything in the root except the "wp-content" directory.
-/*
+/htdocs/*
 !htdocs
 
 # ignore everything in the "wp-content" directory, except:

@@ -1,0 +1,23 @@
+default:
+  - 'sass'
+  - 'concat'
+  - 'watch'
+
+start: # Gets everything setup.
+  - 'sync'
+  - 'shell:composer'
+  - 'sass'
+  - 'concat'
+
+build: # Handles the production code ( compressing everything ).
+  - 'sass'
+  - 'concat'
+
+serve:
+  - 'sass'
+  - 'concat'
+  # - 'uglify'
+  - 'watch'
+
+deploy:
+  - 'shell:deploy'
