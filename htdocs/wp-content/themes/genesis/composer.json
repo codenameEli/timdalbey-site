@@ -1,0 +1,13 @@
+{
+    "name": "launchdm/genesis",
+    "description": "Genesis Framework.",
+    "type": "wordpress-theme",
+    "license": "proprietary",
+    "authors": [{
+            "name": "launchdm",
+            "email": "web@launchdm.com"
+    }],
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

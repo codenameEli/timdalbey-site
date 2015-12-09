@@ -1,0 +1,14 @@
+{
+    "name": "launchdm/launchpad-theme",
+    "description": "Custom built WordPress theme",
+    "type": "wordpress-theme",
+    "authors": [
+        {
+            "name": "Eli Dalbey",
+            "email": "eli@launchdm.com"
+        }
+    ],
+    "require": {
+        "WebDevStudios/cmb2": "~2.0.5"
+    }
+}

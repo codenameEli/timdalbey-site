@@ -1,0 +1,49 @@
+body {
+	font-family: $font;
+	font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+	a {
+
+	}
+}
+
+h1 {
+
+}
+
+h2 {
+	text-transform: uppercase;
+	font-family: $fontCondensed;
+	font-weight: 700;
+	font-size: 36px;
+	color: #4D4D62;
+}
+
+p {
+
+}
+
+a {
+	&:hover {
+
+	}
+}
+
+// Font Awesome Icons
+.fa {
+
+}
+
+// Text Selection
+::selection,
+::-moz-selection {
+
+}
